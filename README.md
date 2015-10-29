@@ -4,8 +4,10 @@ This is just a fun project that grew out of a code challenge night.  The first g
 
 Working out how to draw on the canvas element as well as getting back into some trigonometry (rememeber "sohcahtoa"?) has been part of the fun here.
 
-[Here's a quick animation][jkio] based on what I've done so far.
+[Here's a quick black&white animation][jkio1] based on what I've done so far. Also, [here's one with more color][jkio2].
 
 
-   [jkio]: <http://joelkraft.github.io/>
+   [jkio1]: <http://joelkraft.github.io/fractals/bw/>
+   [jkio2]: <http://joelkraft.github.io/fractals/color/>
+
   

@@ -11,6 +11,7 @@ window.onload = function() {
       stroke = context.stroke.bind(context),
       closePath = context.closePath.bind(context),
       clearCanvas = context.clearRect.bind(context, 0, 0, canvas.width, canvas.height),
+      str = context.strokeStyle,
       drawLeg = function drawLeg (position, length, orientation) {
         var pos = position,
             len = length,
@@ -45,13 +46,14 @@ window.onload = function() {
       angle = degToRad(60);
       // ori = degToRad(70);
 
-  clearCanvas();
+  // clearCanvas();
+    context.strokeStyle = 'rgb(' + (Math.floor(Math.random()*105)) + ',' + (55+Math.floor(Math.random()*55)) + ',' + (105+Math.floor(Math.random()*150)) + ')';
 
-  for (var i = 0; i <= 1000; i += 10.3) {
-    length = (Math.random() + .1) *400;
-    ori = degToRad(i+ Math.random());
+  for (var i = 0; i <= 200; i += 10) {
+    length = /*(Math.random()+0.06) */ 450;
+    ori = degToRad(360*Math.random());
     beginPath();
-    var start = findFirst([400,300], length, ori).start; 
+    var start = findFirst([275+Math.random()*325,325+Math.random()*5], length, ori).start; 
     moveTo(start);
 console.log(start)
     var next = (function(c, l, orientation) {
@@ -89,7 +91,7 @@ console.log(start)
       },
       startAnimation = function startAnimation () {
         console.log('set Interval called');
-        intID = setInterval(drawTriangles, 200);
+        intID = setInterval(drawTriangles, 100);
       };
 
   document.getElementById('fractal').onclick = clearInt;
