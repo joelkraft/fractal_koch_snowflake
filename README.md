@@ -7,5 +7,5 @@ Working out how to draw on the canvas element as well as getting back into some 
 [Here's a quick animation][jkio] based on what I've done so far.
 
 
-   [jkio]: <http://code.joelkraft.net>
+   [jkio]: <http://joelkraft.github.io/>
   
